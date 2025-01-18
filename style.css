@@ -1,21 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-
 .font-poppins{
     font-family: "Poppins", serif;
 }
-
 *{
     padding: 0;
     margin: 0;
 }
-
 /* Shared Styles */
-
-
-
-
-
+.show{
+    display: none;
+}
 
 /* Navbar */
 .navbar{
@@ -43,7 +37,6 @@
 .icon{
     font-size: 1.4rem;
 }
-
 /* Banner */
 .banner{
     max-width: 1440px ;
@@ -75,7 +68,6 @@
 .banner-image img{
     width: 100%;
 }
-
 .btn{
     font-size: 1rem;
     font-weight: 700;
@@ -85,17 +77,16 @@
     border-radius: 40px;
     color: white;
 }
-
 /* Main */
 .logos{
     max-width: 1110px;
-    height: 110px;
-    margin: 40px auto;
+    /* height: 110px; */
+    margin: 80px auto;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 60px;
-    border: 1px solid;
+    /* border: 1px solid; */
 }
 .section-title{
     text-align: center;
@@ -106,14 +97,13 @@
 .card-section{
     max-width: 1050px;
     margin: 40px auto;
+    position: relative;
 }
-
 .cards{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 30px;
 }
-
 .card{
     max-width: 300px;
     height: 475px;
@@ -126,7 +116,6 @@
     border-radius: 5px;
     gap: 16px;
 }
-
 .card-details{
     display: flex;
     flex-direction: column;
@@ -144,15 +133,43 @@
     width: 196px;
     font-size: .9rem;
     color: #787885;
-
 }
-
-
 .see-more{
-    margin: 30px 10px 10px 930px;
+    position: absolute;
+    bottom: -50px;
+    right: 20px;;
     font-weight: 700;
     color: #E02C6D;
     font-size: 1rem;
     cursor: pointer;
 }
+
+@media screen and (max-width:576px) {
+    .hide{
+        display: none;
+    }
+    .show{
+        display: block;
+    }
+    
+
+    .navbar{
+        padding: 0 20px;
+    }
+
+    .banner{
+        flex-direction: column-reverse;
+        padding: 20px;
+        text-align: center;
+        gap: 30px;
+    }
+    .logos{
+        /* display: flex; */
+        flex-wrap: wrap;
+    }
+
+    
+    
+}
+
 
