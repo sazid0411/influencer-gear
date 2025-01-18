@@ -61,9 +61,10 @@
     margin: 16px 0;
 }
 .banner-image{
-    width: 475px;
-    height: 475px;
+    max-width:  475px;
+    max-height: 475px;
     background: url("images/Circle\ design.svg");
+    background-size: cover;
 }
 .banner-image img{
     width: 100%;
@@ -105,7 +106,7 @@
     gap: 30px;
 }
 .card{
-    max-width: 300px;
+    max-width: 330px;
     height: 475px;
     padding: 15px;
     box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.15);
@@ -144,6 +145,75 @@
     cursor: pointer;
 }
 
+.feature{
+    max-width: 1110px;
+    margin: 100px auto 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+}
+.feature-title{
+    font-size: 2.25rem;
+    font-weight: bold;
+}
+.feature-desc{
+    max-width: 510px;
+    font-weight: bold;
+    font-size: 1rem;
+    margin: 16px 0;
+    color: #6C6C6C;
+}
+.btn-2{
+    border-radius: 0;
+}
+.footer{
+    max-width: 1440px;
+    background-color: #0A0826;
+    margin: 100px auto 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+
+}
+.footer-div{
+    max-width: 362px;
+    height: 140px;
+    padding: 50px 0;
+    text-align: center;
+
+}
+.footer-title{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.footer-desc{
+    font-size: .9rem;
+    font-weight: bold;
+    color: #D9DBE1;
+    margin: 10px 0;
+
+}
+.social{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+.social i{
+    height: 32px;
+    width: 32px;
+    background-color: ;
+    font-size: 2rem;
+    
+}
+
+
+
+
+
+
 @media screen and (max-width:576px) {
     .hide{
         display: none;
@@ -151,7 +221,7 @@
     .show{
         display: block;
     }
-    
+
 
     .navbar{
         padding: 0 20px;
@@ -163,11 +233,42 @@
         text-align: center;
         gap: 30px;
     }
+    .banner-text .banner-title{
+        font-size: 1.75rem;
+        font-weight: bold;
+        margin: 0;
+    }
+    .banner-text .banner-desc{
+        font-size: .9rem;
+        font-weight: bold; 
+    }
     .logos{
-        /* display: flex; */
         flex-wrap: wrap;
+        gap: 20px;
+    }
+    .cards{
+        grid-template-columns: 1fr;
+        align-items: end;
+       
+    }
+    .card{
+        place-self: center;
+    }
+    .feature{
+        flex-direction: column-reverse;
+    }
+    .feature-texts {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .feature-title,.feature-desc{
+        text-align: center;
     }
 
+ 
     
     
 }
