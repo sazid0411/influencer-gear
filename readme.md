@@ -7,10 +7,7 @@ A responsive HTML and CSS project showcasing a web design for influencer-related
 - [Introduction](#introduction)
 - [Features](#features)
 - [Installation](#installation)
-- [Usage](#usage)
 - [Screenshots](#screenshots)
-- [Contributors](#contributors)
-- [License](#license)
 
 ## Introduction
 
