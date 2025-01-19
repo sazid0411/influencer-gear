@@ -28,6 +28,6 @@ A responsive HTML and CSS project showcasing a web design for influencer-related
 ## Screenshots
 
 ![Influencer Gear Preview 01 ](1.png)
-![Influencer Gear Preview 02 ](2.png)
-![Influencer Gear Preview 03 ](3.png)
+![Influencer Gear Preview 02 ](3.png)
+![Influencer Gear Preview 03 ](2.png)
 
